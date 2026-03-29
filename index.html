@@ -503,6 +503,20 @@ p { margin-bottom: 14px; font-size: 1rem; line-height: 1.75; }
 .callout.red  { border-color: var(--red-accent); background: rgba(192,57,43,0.07); color: var(--text-dark); }
 .callout.green { border-color: var(--green-accent); background: rgba(26,122,74,0.07); color: var(--text-dark); }
 
+/* Callouts inside dark/navy sections — ensure legible light text */
+#growth-chart .callout,
+#synergy .callout,
+#interactive .callout,
+#bottom-form .callout {
+  background: rgba(255,255,255,0.08);
+  color: var(--off-white);
+  border-color: var(--gold-bright);
+}
+#growth-chart .callout strong,
+#synergy .callout strong,
+#interactive .callout strong,
+#bottom-form .callout strong { color: var(--gold-bright); }
+
 /* ─── TWO-COL ─── */
 .two-col {
   display: grid;
