@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You! We'll Be In Touch — Advertise Castle Rock</title>
+<meta name="description" content="Thank you for reaching out to Advertise Castle Rock. We've received your request and will be in touch within 24 hours with your free strategy session details.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.advertisecastlerock.com/thank-you.html">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy: #0a1628;
+  --navy-mid: #0d2040;
+  --gold: #c9900c;
+  --gold-bright: #f0b429;
+  --gold-light: #ffd166;
+  --white: #ffffff;
+  --off-white: #f4f1eb;
+  --light-gray: #e8e4dc;
+  --mid-gray: #6a6050;
+  --text-dark: #1a1410;
+  --rock-tan: #c4a882;
+  --green-accent: #1a7a4a;
+  --font-head: 'Oswald', sans-serif;
+  --font-body: 'Source Serif 4', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--off-white);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+#site-header {
+  background: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 12px;
+}
+.header-logo {
+  display: flex; flex-direction: column; line-height: 1.1;
+  text-decoration: none;
+}
+.header-logo .logo-main {
+  font-family: var(--font-head);
+  font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+  font-weight: 700; color: var(--gold-bright);
+  letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap;
+}
+.header-logo .logo-sub {
+  font-family: var(--font-mono); font-size: 0.55rem;
+  color: var(--rock-tan); letter-spacing: 0.1em;
+  text-transform: uppercase; white-space: nowrap;
+}
+.header-phone {
+  font-family: var(--font-head);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-weight: 600; color: var(--gold-bright);
+  text-decoration: none; letter-spacing: 0.03em;
+  white-space: nowrap; flex-shrink: 0;
+}
+.header-phone:hover { color: var(--white); }
+.header-cta {
+  background: var(--gold); color: var(--navy);
+  font-family: var(--font-head); font-size: 0.8rem; font-weight: 700;
+  text-decoration: none; padding: 10px 18px;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  white-space: nowrap; flex-shrink: 0; display: inline-block;
+  transition: background 0.2s;
+}
+.header-cta:hover { background: var(--gold-bright); }
+
+/* MAIN CONTENT */
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mountain clip-path background effect */
+main::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  clip-path: polygon(0% 100%, 5% 55%, 12% 72%, 20% 38%, 28% 62%, 36% 22%, 44% 50%, 52% 32%, 60% 56%, 68% 28%, 76% 52%, 84% 42%, 92% 68%, 100% 45%, 100% 100%);
+  background: rgba(10,22,40,0.06);
+  pointer-events: none;
+}
+
+.ty-card {
+  background: var(--white);
+  border: 2px solid var(--gold);
+  max-width: 680px;
+  width: 100%;
+  padding: 52px 44px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.ty-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-bright), var(--gold));
+}
+
+.ty-checkmark {
+  width: 80px; height: 80px;
+  background: linear-gradient(135deg, var(--green-accent), #2aaa64);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 2.2rem;
+  box-shadow: 0 8px 30px rgba(26,122,74,0.3);
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes popIn {
+  0%  { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.ty-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.ty-card h1 {
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.ty-card h1 span { color: var(--gold-bright); }
+
+.ty-card p {
+  font-size: 1rem;
+  color: var(--mid-gray);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.ty-divider {
+  border: none;
+  border-top: 2px solid var(--light-gray);
+  margin: 28px 0;
+}
+
+.ty-what-happens {
+  background: var(--off-white);
+  border-left: 4px solid var(--gold);
+  padding: 20px 22px;
+  text-align: left;
+  margin: 24px 0;
+}
+
+.ty-what-happens h3 {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.ty-steps { list-style: none; }
+.ty-steps li {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  padding: 7px 0 7px 26px;
+  position: relative;
+  border-bottom: 1px solid var(--light-gray);
+  line-height: 1.55;
+}
+.ty-steps li:last-child { border-bottom: none; }
+.ty-steps li::before {
+  content: '→';
+  position: absolute; left: 0;
+  color: var(--gold); font-weight: 700;
+}
+
+.ty-phone-big {
+  font-family: var(--font-head);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+  margin: 22px 0 8px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.2s;
+}
+.ty-phone-big:hover { color: var(--gold); }
+
+.ty-phone-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--mid-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.btn-back {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  padding: 14px 34px;
+  margin-top: 6px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-back:hover { background: var(--gold-bright); transform: translateY(-2px); }
+
+/* Terminal-style confirmation box */
+.terminal-confirm {
+  background: var(--navy);
+  padding: 18px 20px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.85;
+  color: #7af07a;
+  text-align: left;
+  margin: 22px 0;
+  border: 1px solid rgba(201,144,12,0.3);
+}
+.t-gold { color: var(--gold-bright); }
+.t-dim  { color: rgba(255,255,255,0.32); }
+.cursor {
+  display: inline-block;
+  background: var(--gold-bright);
+  width: 7px; height: 12px;
+  animation: blink 1.1s step-end infinite;
+  vertical-align: middle;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* FOOTER */
+#site-footer {
+  background: var(--navy);
+  border-top: 3px solid var(--gold);
+  padding: 28px 20px;
+}
+.footer-bottom-ty {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(196,168,130,0.45);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--rock-tan);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold-bright); }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ty-card { padding: 36px 22px; }
+  .ty-checkmark { width: 64px; height: 64px; font-size: 1.8rem; }
+  .header-cta { padding: 8px 12px; font-size: 0.72rem; }
+  .footer-bottom-ty { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Advertise Castle Rock Home">
+      <span class="logo-main">🏔 Advertise Castle Rock</span>
+      <span class="logo-sub">Powered by Eye To Ad Media &amp; SearchConverts</span>
+    </a>
+    <a href="tel:18004818638" class="header-phone" aria-label="Call 1-800-481-8638">📞 1-800-481-8638</a>
+    <a href="/" class="header-cta">← Back to Site</a>
+  </div>
+</header>
+
+<!-- MAIN THANK YOU CARD -->
+<main>
+  <div class="ty-card" role="main">
+    <div class="ty-checkmark" aria-hidden="true">✓</div>
+
+    <span class="ty-label">// Message Received · Castle Rock, CO</span>
+
+    <h1>You're On Our <span>Radar.</span><br>Let's Get to Work.</h1>
+
+    <p>Your strategy session request came through loud and clear. We don't pass this to a call center or an automated sequence — a real person on our team reviews every submission personally.</p>
+
+    <div class="terminal-confirm" role="img" aria-label="Submission confirmation terminal">
+<span class="t-gold">$ </span>submit --form=strategy_session
+<span class="t-dim"># Validating submission...</span>
+<span class="t-gold">→ </span>status:        <span style="color:#7af07a;">RECEIVED ✓</span>
+<span class="t-gold">→ </span>response_time: <span style="color:#7af07a;">within 24 hours</span>
+<span class="t-gold">→ </span>cost:          <span style="color:#7af07a;">$0.00 — always free</span>
+<span class="t-gold">→ </span>obligation:    <span style="color:#7af07a;">none</span>
+<span class="t-gold">→ </span>next_step:     <span style="color:var(--gold-bright);">we call you</span>
+<span class="t-gold">$ </span>standing_by...<span class="cursor"></span>
+    </div>
+
+    <div class="ty-what-happens">
+      <h3>Here's What Happens Next:</h3>
+      <ul class="ty-steps">
+        <li>We review your current digital presence — completely free, no strings</li>
+        <li>We identify your top 3 highest-leverage growth opportunities</li>
+        <li>We prepare a custom strategy outline built for your business specifically</li>
+        <li>We call or email you — whichever you prefer — within 24 hours</li>
+        <li>You decide if we're the right fit. Zero pressure. Zero hard sell.</li>
+      </ul>
+    </div>
+
+    <hr class="ty-divider">
+
+    <p style="font-style:italic;color:var(--mid-gray);">Can't wait? Call us directly right now. We pick up.</p>
+
+    <a href="tel:18004818638" class="ty-phone-big" aria-label="Call 1-800-481-8638">📞 1-800-481-8638</a>
+    <span class="ty-phone-label">Toll-Free · Castle Rock, CO · Available Nationwide</span>
+
+    <a href="/" class="btn-back">← Return to AdvertiseCastleRock.com</a>
+
+    <p style="margin-top:24px;font-size:0.82rem;color:var(--mid-gray);font-family:var(--font-mono);letter-spacing:0.04em;">Powered by <a href="https://www.eyetoad.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Eye To Ad Media</a> &amp; <a href="https://www.searchconverts.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">SearchConverts.com</a></p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer" role="contentinfo">
+  <div class="footer-bottom-ty">
+    <p class="footer-copy">© 2025 AdvertiseCastleRock.com · Powered by Eye To Ad Media · 1-800-481-8638</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/">Home</a>
+      <a href="/#faq">FAQ</a>
+      <a href="https://www.eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a>
+      <a href="https://www.searchconverts.com" target="_blank" rel="noopener">SearchConverts</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
