@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.advertisecastlerock.com/sitemap.xml
+Sitemap: https://advertisecastlerock.com/sitemap.xml
